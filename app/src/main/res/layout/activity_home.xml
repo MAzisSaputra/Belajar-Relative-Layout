@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/bg_btn_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        
+        <ImageView
+            android:src="@drawable/avatar"
+            android:layout_marginLeft="150dp"
+            android:layout_width="112dp"
+            android:layout_height="106dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--            Kolom Terakhir-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="270dp"
+            android:background="#FFFF">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/mesincuci" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="25dp"
+                android:text="Stok"
+                android:textColor="#070600"
+                android:textSize="36sp" />
+
+        </RelativeLayout>
+<!--            kolom kedua-->
+        <RelativeLayout
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFF">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/city" />
+            <TextView
+                android:text="Penjualan"
+                android:textColor="#070600"
+                android:textSize="36sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="130dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+<!--            kolom pertama-->
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFF">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/foto" />
+            <TextView
+                android:id="@+id/barang_data"
+                android:text="@string/barang_data"
+                android:textColor="#070600"
+                android:textSize="36sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="130dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
